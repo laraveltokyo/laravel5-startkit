@@ -143,7 +143,7 @@ return [
 		/*
 		 * Thirdparty Service Providers...
 		 */
-		'Jumilla\LaravelExtension\ServiceProvider',
+		'LaravelPlus\Extension\ServiceProvider',
 		'Barryvdh\Debugbar\ServiceProvider',
 	],
 

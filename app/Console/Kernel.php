@@ -1,7 +1,7 @@
 <?php namespace App\Console;
 
 use Exception;
-use Jumilla\LaravelExtension\ConsoleKernel;
+use LaravelPlus\Extension\ConsoleKernel;
 
 class Kernel extends ConsoleKernel {
 

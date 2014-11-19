@@ -1,7 +1,7 @@
 <?php namespace App\Http;
 
 use Exception;
-use Jumilla\LaravelExtension\HttpKernel;
+use LaravelPlus\Extension\HttpKernel;
 
 class Kernel extends HttpKernel {
 
