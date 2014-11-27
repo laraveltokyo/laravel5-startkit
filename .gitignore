@@ -1,2 +1,8 @@
-/vendor
 .env
+
+composer.lock
+composer.phar
+/vendor
+
+.DS_Store
+Thumbs.db
