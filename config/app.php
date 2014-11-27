@@ -109,6 +109,7 @@ return [
 	*/
 
 	'providers' => [
+
 		/*
 		 * Application Service Providers...
 		 */
@@ -145,6 +146,7 @@ return [
 		 */
 		'LaravelPlus\Extension\ServiceProvider',
 		'Barryvdh\Debugbar\ServiceProvider',
+
 	],
 
 	/*

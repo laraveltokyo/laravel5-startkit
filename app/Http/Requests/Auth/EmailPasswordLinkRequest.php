@@ -1,6 +1,8 @@
-<?php namespace App\Http\Requests;
+<?php namespace App\Http\Requests\Auth;
 
-class LoginRequest extends Request {
+use App\Http\Requests\Request;
+
+class EmailPasswordLinkRequest extends Request {
 
 	/**
 	 * Get the validation rules that apply to the request.
@@ -10,7 +12,7 @@ class LoginRequest extends Request {
 	public function rules()
 	{
 		return [
-			'email' => 'required', 'password' => 'required',
+			'email' => 'required',
 		];
 	}
 
