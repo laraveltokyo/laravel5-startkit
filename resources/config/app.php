@@ -13,7 +13,7 @@ return [
 	|
 	*/
 
-	'debug' => true,
+	'debug' => (bool) getenv('APP_DEBUG') ?: false,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -146,7 +146,7 @@ return [
 		 */
 		'Illuminate\Html\HtmlServiceProvider',
 		'LaravelPlus\Extension\ServiceProvider',
-		'Barryvdh\Debugbar\ServiceProvider',
+//		'Barryvdh\Debugbar\ServiceProvider',
 
 	],
 
@@ -189,6 +189,7 @@ return [
 		'File'      => 'Illuminate\Support\Facades\File',
 		'Hash'      => 'Illuminate\Support\Facades\Hash',
 		'Input'     => 'Illuminate\Support\Facades\Input',
+		'Inspiring' => 'Illuminate\Foundation\Inspiring',
 		'Lang'      => 'Illuminate\Support\Facades\Lang',
 		'Log'       => 'Illuminate\Support\Facades\Log',
 		'Mail'      => 'Illuminate\Support\Facades\Mail',
@@ -205,9 +206,6 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
-
-		'Form'      => 'Illuminate\Html\FormFacade',
-		'Html'      => 'Illuminate\Html\HtmlFacade',
 
 	],
 
