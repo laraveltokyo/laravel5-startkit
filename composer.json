@@ -9,8 +9,6 @@
 		"laravel/socialite": "~2.0@dev",
 		"illuminate/html": "~5.0@dev",
 		"laravel-plus/extension": "dev-master",
-		"aws/aws-sdk-php": "dev-master",
-		"dropbox/dropbox-sdk": "dev-master",
 		"barryvdh/laravel-debugbar": "dev-master"
 	},
 	"require-dev": {

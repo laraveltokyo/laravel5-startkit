@@ -24,9 +24,10 @@ $ composer create-project laravel-plus/laravel5 <directory>
 	- addon:setup
 	- addon:make
 	- addon:check
-	- app:container:list
+	- app:container
 	- hash:make
 	- hash:check
+	- route (Laravel4互換)
 	- serve (Laravel4互換)
 	- tail (Laravel4互換、app.log=daily対応)
 - (予定)日本語リソース (lang/ja)
