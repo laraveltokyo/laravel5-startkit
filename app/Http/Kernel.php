@@ -1,6 +1,6 @@
 <?php namespace App\Http;
 
-use LaravelPlus\Extension\HttpKernel as HttpKernel;
+use LaravelPlus\Extension\HttpKernel;
 
 class Kernel extends HttpKernel {
 

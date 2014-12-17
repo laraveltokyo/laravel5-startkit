@@ -1,7 +1,7 @@
 <?php namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
-use LaravelPlus\Extension\ConsoleKernel as ConsoleKernel;
+use LaravelPlus\Extension\ConsoleKernel;
 
 class Kernel extends ConsoleKernel {
 

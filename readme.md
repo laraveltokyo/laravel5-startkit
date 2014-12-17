@@ -28,6 +28,7 @@ $ composer create-project laravel-plus/laravel5 <directory>
 	- hash:make
 	- hash:check
 	- serve (Laravel4互換)
+	- tail (Laravel4互換、app.log=daily対応)
 - (予定)日本語リソース (lang/ja)
 
 ### ライセンス
