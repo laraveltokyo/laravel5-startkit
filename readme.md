@@ -2,11 +2,6 @@
 
 ### インストール方法
 
-#### Laravel5.0-dev
-```Console
-$ composer create-project laravel-plus/laravel5=dev-master <directory>
-```
-
 #### Laravel5.0 (リリース版)
 ```Console
 $ composer create-project laravel-plus/laravel5 <directory>
@@ -28,8 +23,7 @@ $ composer create-project laravel-plus/laravel5 <directory>
 	- hash:make
 	- hash:check
 	- route (Laravel4互換)
-	- serve (Laravel4互換)
-	- tail (Laravel4互換、app.log=daily対応)
+	- tail (Laravel4互換、`app.log=daily`対応)
 - (予定)日本語リソース (lang/ja)
 
 ### ライセンス
