@@ -11,7 +11,17 @@ class AppServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		//
+		/* Make database for sqlite */
+		if (config('database.default') == 'sqlite') {
+			// check '{{env}}.sqlite' exists
+			$databaseFile = config('database.connections.sqlite.database');
+
+			if (!file_exists($databaseFile)) {
+				// touch 'local.sqlite'
+				info('Make Sqlite File "'.$databaseFile.'"');
+				file_put_contents($databaseFile, '');
+			}
+		}
 	}
 
 	/**
