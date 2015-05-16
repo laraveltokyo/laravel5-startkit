@@ -13,6 +13,7 @@
 		"barryvdh/laravel-debugbar": "~2.0"
 	},
 	"require-dev": {
+		"laracasts/generators": "~1.1",
 		"phpunit/phpunit": "~4.0",
 		"phpspec/phpspec": "~2.1"
 	},
