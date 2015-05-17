@@ -139,6 +139,7 @@ return [
 		/*
 		 * 3rd party Service Providers...
 		 */
+		'Illuminate\Html\HtmlServiceProvider',
 		'LaravelPlus\Extension\ServiceProvider',
 		'Barryvdh\Debugbar\ServiceProvider',
 
@@ -199,8 +200,10 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
 
-		'InputModel'      => 'LaravelPlus\Extension\Specs\InputModel',
-		'FormModel'       => 'LaravelPlus\Extension\Specs\FormModel',
+		'Html'      => 'Illuminate\Html\HtmlFacade',
+		'Form'      => 'Illuminate\Html\FormFacade',
+		'InputModel' => 'LaravelPlus\Extension\Specs\InputModel',
+		'FormModel' => 'LaravelPlus\Extension\Specs\FormModel',
 
 	],
 
