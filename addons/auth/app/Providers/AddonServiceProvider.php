@@ -16,10 +16,10 @@ class AddonServiceProvider extends \Illuminate\Support\ServiceProvider {
 	 */
 	public function register()
 	{
-		// $this->app->bind(
-		// 	'Illuminate\Contracts\Auth\Registrar',
-		// 	'App\Auth\Services\Registrar'
-		// );
+		$this->app->bind(
+			'Illuminate\Contracts\Auth\Registrar',
+			'App\Auth\Services\Registrar'
+		);
 	}
 
 	/**
@@ -29,7 +29,19 @@ class AddonServiceProvider extends \Illuminate\Support\ServiceProvider {
 	 */
 	public function boot()
 	{
-		View::addLocation(addon_path(addon_name(), 'resources/views'));
+		View::addLocation(realpath(addon_path(addon_name(), 'resources/views')));
+
+		$this->setupPublishFiles();
+	}
+
+	protected function setupPublishFiles()
+	{
+		$this->publishes([
+//			addon_path(addon_name(), 'database') => base_path('database'),
+			addon_path(addon_name(), 'database/migrations') => base_path('database/migrations'),
+			addon_path(addon_name(), 'database/seeds') => base_path('database/seeds'),
+			addon_path(addon_name(), 'public') => base_path('public'),
+		]);
 	}
 
 	/**
