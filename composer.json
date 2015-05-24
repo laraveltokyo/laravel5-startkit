@@ -41,6 +41,7 @@
 		"post-create-project-cmd": [
 			"php artisan key:generate",
 			"php artisan vendor:publish",
+			"composer dump-autoload",
 			"php artisan migrate"
 		]
 	},

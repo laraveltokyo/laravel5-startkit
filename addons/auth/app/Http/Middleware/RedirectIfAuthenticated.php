@@ -1,9 +1,10 @@
-<?php namespace App\Http\Middleware;
+<?php namespace App\Auth\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
+use Illuminate\Http\RedirectResponse;
 
-class Authenticate {
+class RedirectIfAuthenticated {
 
 	/**
 	 * The Guard implementation.
@@ -32,16 +33,9 @@ class Authenticate {
 	 */
 	public function handle($request, Closure $next)
 	{
-		if ($this->auth->guest())
+		if ($this->auth->check())
 		{
-			if ($request->ajax())
-			{
-				return response('Unauthorized.', 401);
-			}
-			else
-			{
-				return redirect()->guest('auth/login');
-			}
+			return new RedirectResponse(url('/home'));
 		}
 
 		return $next($request);

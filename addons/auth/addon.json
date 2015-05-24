@@ -22,9 +22,9 @@
     "http": {
         "middlewares": [],
         "route_middlewares": {
-            "auth": "App\\Http\\Middleware\\Authenticate",
+            "auth": "App\\Auth\\Http\\Middleware\\Authenticate",
             "auth.basic": "Illuminate\\Auth\\Middleware\\AuthenticateWithBasicAuth",
-            "guest": "App\\Http\\Middleware\\RedirectIfAuthenticated"
+            "guest": "App\\Auth\\Http\\Middleware\\RedirectIfAuthenticated"
         }
     },
     "includes_global_aliases": true,
