@@ -1,6 +1,6 @@
 {
     "version": 5,
-    "namespace": "App\\Generator",
+    "namespace": "App\\Generators",
     "directories": [
         "app"
     ],
@@ -9,7 +9,7 @@
         "tests": "tests"
     },
     "providers": [
-        "App\\Generator\\Providers\\AddonServiceProvider"
+        "App\\Generators\\Providers\\AddonServiceProvider"
     ],
     "console": {
         "commands": []

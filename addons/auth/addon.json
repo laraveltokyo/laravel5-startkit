@@ -21,7 +21,11 @@
     },
     "http": {
         "middlewares": [],
-        "route_middlewares": []
+        "route_middlewares": {
+            "auth": "App\\Http\\Middleware\\Authenticate",
+            "auth.basic": "Illuminate\\Auth\\Middleware\\AuthenticateWithBasicAuth",
+            "guest": "App\\Http\\Middleware\\RedirectIfAuthenticated"
+        }
     },
     "includes_global_aliases": true,
     "aliases": []

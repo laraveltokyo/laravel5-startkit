@@ -140,6 +140,7 @@ return [
 		 * 3rd party Service Providers...
 		 */
 		'Illuminate\Html\HtmlServiceProvider',
+		'Laravel\Socialite\SocialiteServiceProvider',
 		'LaravelPlus\Extension\ServiceProvider',
 
 		/*
@@ -150,6 +151,7 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
+		'App\Providers\SqliteServiceProvider',
 
 	],
 
@@ -201,6 +203,7 @@ return [
 
 		'Html'      => 'Illuminate\Html\HtmlFacade',
 		'Form'      => 'Illuminate\Html\FormFacade',
+		'Socialite' => 'Laravel\Socialite\Facades\Socialite',
 		'InputModel' => 'LaravelPlus\Extension\Specs\InputModel',
 		'FormModel' => 'LaravelPlus\Extension\Specs\FormModel',
 

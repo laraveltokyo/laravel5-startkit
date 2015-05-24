@@ -8,7 +8,6 @@
 		"laravel/framework": "5.0.*",
 		"laravel/socialite": "~2.0",
 		"illuminate/html": "~5.0",
-		"illuminate/remote": "~5.0",
 		"laravel-plus/extension": "~2.0",
 		"barryvdh/laravel-debugbar": "~2.0"
 	},
@@ -40,7 +39,8 @@
 			"php artisan optimize"
 		],
 		"post-create-project-cmd": [
-			"php artisan key:generate"
+			"php artisan key:generate",
+			"php artisan vendor:publish"
 		]
 	},
 	"config": {

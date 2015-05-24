@@ -1,4 +1,4 @@
-<?php namespace App\Generator\Providers;
+<?php namespace App\Generators\Providers;
 
 
 class AddonServiceProvider extends \Illuminate\Support\ServiceProvider {
