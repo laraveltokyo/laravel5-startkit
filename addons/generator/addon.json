@@ -1,0 +1,23 @@
+{
+    "version": 5,
+    "namespace": "App\\Generator",
+    "directories": [
+        "app"
+    ],
+    "paths": {
+        "lang": "resources\/lang",
+        "tests": "tests"
+    },
+    "providers": [
+        "App\\Generator\\Providers\\AddonServiceProvider"
+    ],
+    "console": {
+        "commands": []
+    },
+    "http": {
+        "middlewares": [],
+        "route_middlewares": []
+    },
+    "includes_global_aliases": true,
+    "aliases": []
+}

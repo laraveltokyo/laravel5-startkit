@@ -141,7 +141,6 @@ return [
 		 */
 		'Illuminate\Html\HtmlServiceProvider',
 		'LaravelPlus\Extension\ServiceProvider',
-		'Barryvdh\Debugbar\ServiceProvider',
 
 		/*
 		 * Application Service Providers...
