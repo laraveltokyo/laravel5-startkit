@@ -40,7 +40,8 @@
 		],
 		"post-create-project-cmd": [
 			"php artisan key:generate",
-			"php artisan vendor:publish"
+			"php artisan vendor:publish",
+			"php artisan migrate"
 		]
 	},
 	"config": {
