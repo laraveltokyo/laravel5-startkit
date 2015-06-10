@@ -1,14 +1,14 @@
-<?php 
+<?php
 
 Route::controllers([
-	'auth' => 'AuthController',
-	'password' => 'PasswordController',
+    'auth' => 'AuthController',
+    'password' => 'PasswordController',
 ]);
 
 Route::get('/home', [
-	'as' => 'home',
-	'middleware' => 'auth',
-	'uses' => function () {
-		return auth()->user()->email . ': ログインしました。';
-	}
+    'as' => 'home',
+    'middleware' => 'auth',
+    'uses' => function () {
+        return auth()->user()->email.': ログインしました。';
+    },
 ]);

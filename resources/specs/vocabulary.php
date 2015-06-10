@@ -1,5 +1,5 @@
 <?php
 
 return [
-	'username' => 'required',
+    'username' => 'required',
 ];

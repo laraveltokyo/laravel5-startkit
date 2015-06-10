@@ -9,7 +9,7 @@ $ composer create-project laravel-plus/laravel5 <directory>
 
 #### Laravel 5.0
 ```Console
-$ composer create-project laravel-plus/laravel5@5.0.* <directory>
+$ composer create-project laravel-plus/laravel5=5.0.* <directory>
 ```
 
 ### 本家版との違い
