@@ -118,7 +118,16 @@ return [
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
         Illuminate\Cache\CacheServiceProvider::class,
-        Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class,
+        // [BEGIN] expand from Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class
+        Illuminate\Auth\GeneratorServiceProvider::class,
+        Illuminate\Console\ScheduleServiceProvider::class,
+//        Illuminate\Database\MigrationServiceProvider::class,
+//        Illuminate\Database\SeedServiceProvider::class,
+        Illuminate\Foundation\Providers\ComposerServiceProvider::class,
+        Illuminate\Queue\ConsoleServiceProvider::class,
+        Illuminate\Routing\GeneratorServiceProvider::class,
+        Illuminate\Session\CommandsServiceProvider::class,
+        // [END] expand from Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class
         Illuminate\Routing\ControllerServiceProvider::class,
         Illuminate\Cookie\CookieServiceProvider::class,
         Illuminate\Database\DatabaseServiceProvider::class,
@@ -140,14 +149,14 @@ return [
         /*
          * 3rd party Service Providers...
          */
-        'Illuminate\Html\HtmlServiceProvider',
-        'Laravel\Socialite\SocialiteServiceProvider',
-        'LaravelPlus\Extension\ServiceProvider',
+        Laravel\Socialite\SocialiteServiceProvider::class,
+        LaravelPlus\Extension\ServiceProvider::class,
 
         /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
+        App\Providers\DatabaseServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\SqliteServiceProvider::class,
@@ -200,8 +209,6 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
-        'Html'      => Illuminate\Html\HtmlFacade::class,
-        'Form'      => Illuminate\Html\FormFacade::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'InputModel' => LaravelPlus\Extension\Specs\InputModel::class,
         'FormModel' => LaravelPlus\Extension\Specs\FormModel::class,

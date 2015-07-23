@@ -35,8 +35,8 @@ return [
     'digits'               => ':attributeは、:digits桁にしてください。',
     'digits_between'       => ':attributeは、:min桁から:max桁にしてください。',
     'email'                => ':attributeは、有効なメールアドレス形式で指定してください。',
-    'filled'               => ':attributeは必須です。',
     'exists'               => '選択された:attributeは、有効ではありません。',
+    'filled'               => ':attributeは必須です。',
     'image'                => ':attributeには、画像を指定してください。',
     'in'                   => '選択された:attributeは、有効ではありません。',
     'integer'              => ':attributeには、整数を指定してください。',
@@ -70,9 +70,10 @@ return [
         'string'  => ':attributeは、:size文字にしてください。',
         'array'   => ':attributeの項目は、:size個にしてください。',
     ],
+    'string'               => ':attributeには、文字を指定してください。',
+    'timezone'             => ':attributeには、有効なタイムゾーンを指定してください。',
     'unique'               => '指定の:attributeは既に使用されています。',
     'url'                  => ':attributeは、有効なURL形式で指定してください。',
-    'timezone'             => ':attributeには、有効なタイムゾーンを指定してください。',
 
     /*
     |--------------------------------------------------------------------------

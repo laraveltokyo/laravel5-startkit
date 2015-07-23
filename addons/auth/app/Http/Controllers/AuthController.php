@@ -3,6 +3,8 @@
 namespace App\Auth\Http\Controllers;
 
 use App\Auth\User;
+use Illuminate\Foundation\Auth\ThrottlesLogins;
+use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 class AuthController extends BaseController
 {
@@ -17,7 +19,7 @@ class AuthController extends BaseController
     |
     */
 
-    use \Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+    use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
     /**
      * Create a new authentication controller instance.
