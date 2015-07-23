@@ -18,10 +18,6 @@ class AddonServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function register()
     {
-        $this->app->bind(
-            'Illuminate\Contracts\Auth\Registrar',
-            'App\Auth\Services\Registrar'
-        );
     }
 
     /**
@@ -39,9 +35,6 @@ class AddonServiceProvider extends \Illuminate\Support\ServiceProvider
     protected function setupPublishFiles()
     {
         $this->publishes([
-//			addon_path(addon_name(), 'database') => base_path('database'),
-            addon_path(addon_name(), 'database/migrations') => base_path('database/migrations'),
-            addon_path(addon_name(), 'database/seeds') => base_path('database/seeds'),
             addon_path(addon_name(), 'public') => base_path('public'),
         ]);
     }
