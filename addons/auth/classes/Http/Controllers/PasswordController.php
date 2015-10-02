@@ -2,7 +2,7 @@
 
 namespace App\Auth\Http\Controllers;
 
-class PasswordController extends BaseController
+class PasswordController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
