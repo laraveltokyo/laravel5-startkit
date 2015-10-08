@@ -41,6 +41,7 @@ return [
     'in'                   => '選択された:attributeは、有効ではありません。',
     'integer'              => ':attributeには、整数を指定してください。',
     'ip'                   => ':attributeには、有効なIPアドレスを指定してください。',
+    'json'                 => ':attributeには、有効なJSON文字列を指定してください。',
     'max'                  => [
         'numeric' => ':attributeには、:max以下の数字を指定してください。',
         'file'    => ':attributeには、:max KB以下のファイルを指定してください。',
