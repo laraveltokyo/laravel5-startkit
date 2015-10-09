@@ -16,19 +16,32 @@ $ composer create-project laravel-plus/laravel5=5.0.* <directory>
 
 以下のものが標準で組み込まれています。
 - パッケージ指定
-	- [Socialite - laravel/socialite](http://github.com/laravel/socialite)
-	- [Illuminate/html - illuminate/html](http://github.com/illuminate/html)
 	- [Extension Pack - laravel-plus/extension](http://github.com/jumilla/laravel-extension)
+	- [Versionia - jumilla/laravel-versionia](http://github.com/jumilla/laravel-versionia)
+	- [Socialite - laravel/socialite](http://github.com/laravel/socialite)
 	- [Debugbar - barryvdh/laravel-debugbar](http://github.com/barryvdh/laravel-debugbar)
 	- [PHP Coding Standards Fixer - fabpot/php-cs-fixer](https://github.com/friendsofphp/php-cs-fixer)
 - アドオン
 	- `auth` Laravel 5.1に添付されている標準認証MVCキット
 	- `debug` デバッグ支援機能
 - 追加コマンド (Extension)
+	- make:addon
+	- make:console
+	- make:controller
+	- make:event
+	- make:job
+	- make:lisener
+	- make:middleware
+	- make:migration
+	- make:model
+	- make:policy
+	- make:provider
+	- make:request
+	- make:seeder
+	- make:test
 	- addon:setup
 	- addon:list
 	- addon:check
-	- addon:make
 	- addon:remove
 	- database:status
 	- database:upgrade
@@ -40,10 +53,13 @@ $ composer create-project laravel-plus/laravel5=5.0.* <directory>
 	- app:container
 	- hash:make
 	- hash:check
-	- route (Laravel4互換)
 	- tail (Laravel4互換、`app.log=daily`対応)
 - 日本語リソース (resources/lang/ja)
 
-### ライセンス
+## 著者
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Laravel Tokyo
+
+## ライセンス
+
+MIT
