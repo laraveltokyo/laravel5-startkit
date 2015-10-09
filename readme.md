@@ -16,10 +16,12 @@ $ composer create-project laravel-plus/laravel5=5.0.* <directory>
 
 以下のものが標準で組み込まれています。
 - パッケージ指定
-	- [Extension Pack - laravel-plus/extension](http://github.com/jumilla/laravel-extension)
-	- [Versionia - jumilla/laravel-versionia](http://github.com/jumilla/laravel-versionia)
-	- [Socialite - laravel/socialite](http://github.com/laravel/socialite)
-	- [Debugbar - barryvdh/laravel-debugbar](http://github.com/barryvdh/laravel-debugbar)
+	- [Extension Pack - laravel-plus/extension](https://github.com/jumilla/laravel-extension)
+	- [Versionia - jumilla/laravel-versionia](https://github.com/jumilla/laravel-versionia)
+	- [Socialite - laravel/socialite](https://github.com/laravel/socialite)
+	- [GuzzleHttp - guzzlehttp/guzzle](https://github.com/guzzle/guzzle)
+	- [Debugbar - barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
+	- [Faker - fzaninotto/faker](https://github.com/fzaninotto/faker)
 	- [PHP Coding Standards Fixer - fabpot/php-cs-fixer](https://github.com/friendsofphp/php-cs-fixer)
 - アドオン
 	- `auth` Laravel 5.1に添付されている標準認証MVCキット
