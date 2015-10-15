@@ -2,5 +2,5 @@
 
 cd `dirname $0`
 
-vendor/bin/phpunit $@
+vendor/bin/phpunit --coverage-text $@
 #vendor/bin/phpunit --coverage-html=./report $@
