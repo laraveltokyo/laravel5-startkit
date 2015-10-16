@@ -24,9 +24,10 @@ $ composer create-project laravel-plus/laravel5=5.0.* <directory>
 	- [Faker - fzaninotto/faker](https://github.com/fzaninotto/faker)
 	- [PHP Coding Standards Fixer - fabpot/php-cs-fixer](https://github.com/friendsofphp/php-cs-fixer)
 - アドオン
-	- `auth` Laravel 5.1に添付されている標準認証MVCキット
-	- `debug` デバッグ支援機能
-- 追加コマンド (Extension)
+	- **auth** Laravel 5.1に添付されている標準認証MVCキット
+	- **debug** デバッグ支援キット
+	- **generator** ファイル生成コマンド **php artisan make:xxx** のスタブファイルカスタマイズキット
+- 追加コマンド (Extension Pack)
 	- make:addon
 	- make:console
 	- make:controller
@@ -41,10 +42,6 @@ $ composer create-project laravel-plus/laravel5=5.0.* <directory>
 	- make:request
 	- make:seeder
 	- make:test
-	- addon:setup
-	- addon:list
-	- addon:check
-	- addon:remove
 	- database:status
 	- database:upgrade
 	- database:clean
@@ -52,6 +49,10 @@ $ composer create-project laravel-plus/laravel5=5.0.* <directory>
 	- database:rollback
 	- database:again
 	- database:seed
+	- addon:status
+	- addon:name
+	- addon:check
+	- addon:remove
 	- app:container
 	- hash:make
 	- hash:check
@@ -60,7 +61,7 @@ $ composer create-project laravel-plus/laravel5=5.0.* <directory>
 
 ## 著者
 
-Laravel Tokyo
+Fumio Furukawa / 古川 文生 (Laravel Tokyo)
 
 ## ライセンス
 
