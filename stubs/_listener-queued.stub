@@ -26,7 +26,7 @@ class {$class} implements ShouldQueue
     /**
      * Handle the event.
      *
-     * @param  {$event}  $event
+     * @param \{$root_namespace}\Events\{$event} $event
      * @return void
      */
     public function handle({$event} $event)
