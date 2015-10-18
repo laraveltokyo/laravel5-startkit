@@ -20,6 +20,7 @@ class AddonServiceProvider extends \Illuminate\Support\ServiceProvider
 
         $routine = function ($instance, $app) use ($stub_directory) {
             $instance->setStubDirectory($stub_directory);
+
             return $instance;
         };
 
