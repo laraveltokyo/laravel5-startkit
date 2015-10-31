@@ -27,6 +27,8 @@ $ composer create-project laravel-plus/laravel5=5.0.* <directory>
 	- **auth** Laravel 5.1に添付されている標準認証MVCキット
 	- **debug** デバッグ支援キット
 	- **generator** ファイル生成コマンド **php artisan make:xxx** のスタブファイルカスタマイズキット
+- 48ヶ国語のリソース (resources/lang/*)
+	- [Laravel Lang Files](https://github.com/caouecs/laravel-lang/)
 - 追加コマンド (Extension Pack)
 	- make:addon
 	- make:console
@@ -57,7 +59,6 @@ $ composer create-project laravel-plus/laravel5=5.0.* <directory>
 	- hash:make
 	- hash:check
 	- tail (Laravel4互換、`app.log=daily`対応)
-- 日本語リソース (resources/lang/ja)
 
 ## 著者
 
