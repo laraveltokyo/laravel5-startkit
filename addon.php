@@ -1,8 +1,10 @@
 <?php
 
+use App\Generator as Addon;
+
 return [
     'version' => 5,
-    'namespace' => 'App\Generators',
+    'namespace' => 'App\Generator',
     'directories' => [
         'classes',
     ],
@@ -15,8 +17,8 @@ return [
         'views' => 'resources/views',
     ],
     'providers' => [
-        App\Generators\Providers\AddonServiceProvider::class,
-        App\Generators\Providers\RouteServiceProvider::class,
+        Addon\Providers\AddonServiceProvider::class,
+        Addon\Providers\RouteServiceProvider::class,
     ],
     'console' => [
         'commands' => [
