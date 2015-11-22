@@ -13,14 +13,10 @@ return [
     |
     */
 
-    'password' => 'Hasło musi mieć przynajmniej sześć znaków i zgadzać się z potwierdzeniem.',
-
-    'user' => 'Nie znaleziono użytkownika z takim adresem e-mail.',
-
-    'token' => 'Token resetowania hasła jest nieprawidłowy.',
-
-    'sent' => 'Przypomnienie hasła zostało wysłane!',
-
-    'reset' => 'Hasło zostało zresetowane!',
+    'password' => 'Kata laluan mestilah sekurang-kurangnya enam aksara dan sepadan dengan pengesahan.',
+    'reset' => 'Kata laluan anda telah ditetapkan semula!',
+    'sent' => 'Kami telah e-mel pautan set semula kata laluan anda!',
+    'token' => 'Token set semula kata laluan ini tidak sah.',
+    'user' => 'Kami tidak dapat mencari pengguna dengan alamat e-mel tersebut.',
 
 ];
