@@ -26,7 +26,9 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot(Router $router)
     {
-        parent::boot($router);
+        if (config('app.debug')) {
+            parent::boot($router);
+        }
     }
 
     /**
@@ -37,8 +39,10 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map(Router $router)
     {
-        $router->group(['prefix' => $this->prefix, 'namespace' => $this->namespace], function ($router) {
-            require __DIR__.'/../Http/routes.php';
-        });
+        if (config('app.debug')) {
+            $router->group(['prefix' => $this->prefix, 'namespace' => $this->namespace], function ($router) {
+                require __DIR__.'/../Http/routes.php';
+            });
+        }
     }
 }

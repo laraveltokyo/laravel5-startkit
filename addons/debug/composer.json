@@ -1,0 +1,12 @@
+{
+    "name": "laravel-plus/addon-debug",
+    "type": "addon",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fumio Furukawa",
+            "email": "fumio@jumilla.me"
+        }
+    ],
+    "require": {}
+}

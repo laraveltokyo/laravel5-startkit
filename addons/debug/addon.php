@@ -1,5 +1,7 @@
 <?php
 
+use App\Debug as Addon;
+
 return [
     'version' => 5,
     'namespace' => 'App\Debug',
@@ -14,8 +16,8 @@ return [
         'tests' => 'tests',
     ],
     'providers' => [
-        App\Debug\Providers\AddonServiceProvider::class,
-        App\Debug\Providers\RouteServiceProvider::class,
+        Addon\Providers\AddonServiceProvider::class,
+        Addon\Providers\RouteServiceProvider::class,
     ],
     'console' => [
         'commands' => [],
