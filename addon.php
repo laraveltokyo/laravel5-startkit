@@ -1,5 +1,7 @@
 <?php
 
+use App\Auth as Addon;
+
 return [
     'version' => 5,
     'namespace' => 'App\Auth',
@@ -14,9 +16,9 @@ return [
         'tests' => 'tests',
     ],
     'providers' => [
-        App\Auth\Providers\AddonServiceProvider::class,
-        App\Auth\Providers\DatabaseServiceProvider::class,
-        App\Auth\Providers\RouteServiceProvider::class,
+        Addon\Providers\AddonServiceProvider::class,
+        Addon\Providers\DatabaseServiceProvider::class,
+        Addon\Providers\RouteServiceProvider::class,
     ],
     'console' => [
         'commands' => [],
