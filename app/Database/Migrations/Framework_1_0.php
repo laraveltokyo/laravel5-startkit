@@ -39,6 +39,7 @@ class Framework_1_0 extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('failed_jobs');
         Schema::dropIfExists('jobs');
         Schema::dropIfExists('sessions');
         Schema::dropIfExists('cache');
@@ -67,6 +68,9 @@ class Framework_1_0 extends Migration
     {
         Schema::create('sessions', function (Blueprint $table) {
             $table->string('id')->unique();
+            $table->integer('user_id')->nullable();
+            $table->string('ip_address', 45)->nullable();
+            $table->text('user_agent')->nullable();
             $table->text('payload');
             $table->integer('last_activity');
         });
@@ -88,6 +92,14 @@ class Framework_1_0 extends Migration
             $table->unsignedInteger('reserved_at')->nullable();
             $table->unsignedInteger('available_at');
             $table->unsignedInteger('created_at');
+        });
+
+        Schema::create('failed_jobs', function (Blueprint $table) {
+            $table->increments('id');
+            $table->text('connection');
+            $table->text('queue');
+            $table->longText('payload');
+            $table->timestamp('failed_at');
         });
     }
 }
