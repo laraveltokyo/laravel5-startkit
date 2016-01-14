@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Auth;
+use App\Auth as Addon;
 
 return [
     'version' => 5,
-    'namespace' => __NAMESPACE__,
+    'namespace' => 'App\Auth',
     'directories' => [
         'classes',
     ],
@@ -16,9 +16,9 @@ return [
         'tests' => 'tests',
     ],
     'providers' => [
-        Providers\AddonServiceProvider::class,
-        Providers\DatabaseServiceProvider::class,
-        Providers\RouteServiceProvider::class,
+        Addon\Providers\AddonServiceProvider::class,
+        Addon\Providers\DatabaseServiceProvider::class,
+        Addon\Providers\RouteServiceProvider::class,
     ],
     'console' => [
         'commands' => [],
@@ -26,9 +26,9 @@ return [
     'http' => [
         'middlewares' => [],
         'route_middlewares' => [
-            'auth' => Http\Middleware\Authenticate::class,
+            'auth' => App\Auth\Http\Middleware\Authenticate::class,
             'auth.basic' => Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-            'guest' => Http\Middleware\RedirectIfAuthenticated::class,
+            'guest' => App\Auth\Http\Middleware\RedirectIfAuthenticated::class,
         ],
     ],
     'includes_global_aliases' => true,
