@@ -23,6 +23,8 @@ return [
         'commands' => [],
     ],
     'http' => [
+        'domain' => env('APP_DEBUG_DOMAIN'),
+        'prefix' => env('APP_DEBUG_PATH', 'debug'),
         'middlewares' => [],
         'route_middlewares' => [],
     ],

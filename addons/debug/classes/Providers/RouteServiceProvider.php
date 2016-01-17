@@ -7,17 +7,6 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 
 class RouteServiceProvider extends ServiceProvider
 {
-    protected $prefix = 'debug';
-
-    /**
-     * This namespace is applied to the controller routes in your routes file.
-     *
-     * In addition, it is set as the URL generator's root namespace.
-     *
-     * @var string
-     */
-    protected $namespace = 'App\Debug\Http\Controllers';
-
     /**
      * Define your route model bindings, pattern filters, etc.
      *
@@ -39,10 +28,12 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map(Router $router)
     {
-        if (config('app.debug')) {
-            $router->group(['prefix' => $this->prefix, 'namespace' => $this->namespace], function ($router) {
-                require __DIR__.'/../Http/routes.php';
-            });
-        }
+        $domain = addon()->config('addon.http.domain');
+        $prefix = addon()->config('addon.http.prefix');
+        $namespace = addon()->config('addon.namespace').'\Http\Controllers';
+
+        $router->group(['domain' => $domain, 'prefix' => $prefix, 'namespace' => $namespace], function ($router) {
+            require __DIR__.'/../Http/routes.php';
+        });
     }
 }
