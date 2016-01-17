@@ -1,10 +1,10 @@
 <?php
 
-use App\Debug as Addon;
+namespace App\Debug;
 
 return [
     'version' => 5,
-    'namespace' => 'App\Debug',
+    'namespace' => __NAMESPACE__,
     'directories' => [
         'classes',
     ],
@@ -16,8 +16,8 @@ return [
         'tests' => 'tests',
     ],
     'providers' => [
-        Addon\Providers\AddonServiceProvider::class,
-        Addon\Providers\RouteServiceProvider::class,
+        Providers\AddonServiceProvider::class,
+        Providers\RouteServiceProvider::class,
     ],
     'console' => [
         'commands' => [],
