@@ -17,7 +17,7 @@ class RedirectIfAuthenticated
     public function handle($request, Closure $next, $guard = null)
     {
         if (Auth::guard($guard)->check()) {
-            return redirect(addon()->config('routes.landing'));
+            return redirect(addon()->config('addon.routes.landing', '/'));
         }
 
         return $next($request);
