@@ -20,7 +20,7 @@ class Authenticate
             if ($request->ajax() || $request->wantsJson()) {
                 return response('Unauthorized.', 401);
             } else {
-                return redirect()->guest(addon()->config('routes.login'));
+                return redirect()->guest(addon()->config('addon.routes.login', '/login'));
             }
         }
 

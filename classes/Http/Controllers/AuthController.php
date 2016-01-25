@@ -41,7 +41,7 @@ class AuthController extends Controller
     {
         $this->middleware('guest', ['except' => 'logout']);
 
-        $this->redirectTo = addon()->config('routes.home');
+        $this->redirectTo = addon()->config('addon.routes.home', '/home');
     }
 
     /**
