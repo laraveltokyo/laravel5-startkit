@@ -24,6 +24,9 @@ return [
         Providers\DatabaseServiceProvider::class,
         Providers\RouteServiceProvider::class,
     ],
+    'includes_global_aliases' => true,
+    'aliases' => [
+    ],
     'console' => [
         'commands' => [
         ],
@@ -32,13 +35,10 @@ return [
         'middlewares' => [
         ],
         'route_middlewares' => [
-            'auth' => new ClassName('Http\Middleware\Authenticate'),
-            'auth.basic' => new ClassName('\Illuminate\Auth\Middleware\AuthenticateWithBasicAuth'),
-            'guest' => new ClassName('Http\Middleware\RedirectIfAuthenticated'),
+            'auth' => Http\Middleware\Authenticate::class,
+            'auth.basic' => Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+            'guest' => Http\Middleware\RedirectIfAuthenticated::class,
         ],
-    ],
-    'includes_global_aliases' => true,
-    'aliases' => [
     ],
     'routes' => [
         'domain' => env('APP_ADDON_DOMAIN'),
