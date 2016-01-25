@@ -8,10 +8,25 @@ return [
     'directories' => [
         'classes',
     ],
+    'files' => [
+    ],
     'paths' => [
         'config' => 'config',
     ],
     'providers' => [
         Providers\AddonServiceProvider::class,
+    ],
+    'console' => [
+        'commands' => [
+        ],
+    ],
+    'http' => [
+        'middlewares' => [
+        ],
+        'route_middlewares' => [
+        ],
+    ],
+    'includes_global_aliases' => true,
+    'aliases' => [
     ],
 ];
