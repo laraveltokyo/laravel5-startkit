@@ -5,13 +5,6 @@ namespace App\Auth\Providers;
 class AddonServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     /**
-     * Indicates if loading of the provider is deferred.
-     *
-     * @var bool
-     */
-    protected $defer = false;
-
-    /**
      * Register the service provider.
      *
      * @return void
@@ -32,20 +25,15 @@ class AddonServiceProvider extends \Illuminate\Support\ServiceProvider
         $this->setupPublishFiles();
     }
 
+    /**
+     * Setup publish files.
+     *
+     * @return void
+     */
     protected function setupPublishFiles()
     {
         $this->publishes([
             addon_path(addon_name(), 'public') => base_path('public'),
         ]);
-    }
-
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return array
-     */
-    public function provides()
-    {
-        return [];
     }
 }

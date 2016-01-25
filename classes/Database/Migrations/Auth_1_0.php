@@ -9,18 +9,6 @@ use Illuminate\Database\Schema\Blueprint;
 class Auth_1_0 extends Migration
 {
     /**
-     * Define depends migration versions.
-     * ex) ['auth' => 1.0].
-     *
-     * @return array
-     */
-    public function dependsTo()
-    {
-        return [
-        ];
-    }
-
-    /**
      * Run the migrations.
      *
      * @return void
