@@ -9,16 +9,12 @@ return [
         'classes',
     ],
     'files' => [
-        'helpers.php',
     ],
     'paths' => [
         'config' => 'config',
-        'lang' => 'resources/lang',
-        'views' => 'resources/views',
     ],
     'providers' => [
         Providers\AddonServiceProvider::class,
-        Providers\RouteServiceProvider::class,
     ],
     'console' => [
         'commands' => [
