@@ -8,11 +8,14 @@ return [
     'directories' => [
         'classes',
     ],
+    'files' => [
+        'helpers.php',
+    ],
     'paths' => [
-        'assets' => 'resources\/assets',
-        'lang' => 'resources\/lang',
-        'specs' => 'resources\/specs',
-        'views' => 'resources\/views',
+        'config' => 'config',
+        'lang' => 'lang',
+        'specs' => 'specs',
+        'views' => 'views',
         'tests' => 'tests',
     ],
     'providers' => [
@@ -20,12 +23,26 @@ return [
         Providers\RouteServiceProvider::class,
     ],
     'console' => [
-        'commands' => [],
+        'commands' => [
+        ],
     ],
     'http' => [
-        'middlewares' => [],
-        'route_middlewares' => [],
+        'middlewares' => [
+        ],
+        'route_middlewares' => [
+        ],
     ],
     'includes_global_aliases' => true,
-    'aliases' => [],
+    'aliases' => [
+    ],
+    'routes' => [
+        'domain' => env('APP_ADDON_DOMAIN'),
+        'prefix' => env('APP_ADDON_PATH', 'debug'),
+        'middleware' => [
+            'web',
+        ],
+        'files' => [
+            'classes/Http/routes.php',
+        ],
+    ],
 ];

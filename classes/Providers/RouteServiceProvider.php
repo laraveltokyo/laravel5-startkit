@@ -7,17 +7,6 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 
 class RouteServiceProvider extends ServiceProvider
 {
-    protected $prefix = 'debug';
-
-    /**
-     * This namespace is applied to the controller routes in your routes file.
-     *
-     * In addition, it is set as the URL generator's root namespace.
-     *
-     * @var string
-     */
-    protected $namespace = 'App\Debug\Http\Controllers';
-
     /**
      * Define your route model bindings, pattern filters, etc.
      *
@@ -26,23 +15,32 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot(Router $router)
     {
-        if (config('app.debug')) {
-            parent::boot($router);
-        }
+        parent::boot($router);
     }
 
     /**
      * Define the routes for the addon.
      *
-     * @param  \Illuminate\Routing\Router  $router  (injection)
+     * @param  \Illuminate\Routing\Router  $router (injection)
      * @return void
      */
     public function map(Router $router)
     {
-        if (config('app.debug')) {
-            $router->group(['prefix' => $this->prefix, 'namespace' => $this->namespace], function ($router) {
-                require __DIR__.'/../Http/routes.php';
-            });
-        }
+        $attributes = [
+            'domain' => addon()->config('addon.routes.domain', null),
+            'prefix' => addon()->config('addon.routes.prefix', ''),
+            'middleware' => addon()->config('addon.routes.middleware', []),
+            'namespace' => addon()->config('addon.namespace').'\Http\Controllers',
+        ];
+
+        $files = array_map(function ($file) {
+            return addon()->path($file);
+        }, addon()->config('addon.routes.files', ['classes/Http/routes.php']));
+
+        $router->group($attributes, function ($router) use ($files) {
+            foreach ($files as $file) {
+                require $file;
+            }
+        });
     }
 }
