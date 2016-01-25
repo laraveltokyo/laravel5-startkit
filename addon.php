@@ -46,6 +46,8 @@ return [
         'files' => [
             'classes/Http/routes.php',
         ],
+        'landing' => '/',
         'home' => '/home',
+        'login' => '/login',
     ],
 ];
