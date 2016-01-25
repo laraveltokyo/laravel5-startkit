@@ -1,11 +1,11 @@
 @extends('errors.template')
 
-@section('title', 'Be right back.')
+@section('title', 'Error')
 
 @section('content')
         <div class="container">
             <div class="content">
-                <div class="title">Be right back.</div>
+                <div class="title">Unauthorized</div>
             </div>
         </div>
 @endsection

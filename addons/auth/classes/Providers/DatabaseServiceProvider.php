@@ -4,11 +4,12 @@ namespace App\Auth\Providers;
 
 use Jumilla\Versionia\Laravel\Support\DatabaseServiceProvider as ServiceProvider;
 use App\Auth\Database\Migrations;
+use App\Auth\Database\Seeds;
 
 class DatabaseServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap the application events.
+     * Bootstrap database services.
      *
      * @return void
      */

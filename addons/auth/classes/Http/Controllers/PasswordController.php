@@ -2,6 +2,8 @@
 
 namespace App\Auth\Http\Controllers;
 
+use Illuminate\Foundation\Auth\ResetsPasswords;
+
 class PasswordController extends Controller
 {
     /*
@@ -15,7 +17,11 @@ class PasswordController extends Controller
     |
     */
 
-    use \Illuminate\Foundation\Auth\ResetsPasswords;
+    use ResetsPasswords;
+
+    protected $linkRequestView = 'auth::passwords.email';
+
+    protected $resetView = 'auth::passwords.reset';
 
     /**
      * Create a new password controller instance.

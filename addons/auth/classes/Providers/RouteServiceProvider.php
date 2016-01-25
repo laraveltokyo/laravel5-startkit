@@ -16,24 +16,31 @@ class RouteServiceProvider extends ServiceProvider
     public function boot(Router $router)
     {
         parent::boot($router);
-
-        //
     }
 
     /**
      * Define the routes for the addon.
      *
-     * @param  \Illuminate\Routing\Router  $router  (injection)
+     * @param  \Illuminate\Routing\Router  $router (injection)
      * @return void
      */
     public function map(Router $router)
     {
-        $domain = addon()->config('addon.http.domain');
-        $prefix = addon()->config('addon.http.prefix');
-        $namespace = addon()->config('addon.namespace').'\Http\Controllers';
+        $attributes = [
+            'domain' => addon()->config('addon.routes.domain', null),
+            'prefix' => addon()->config('addon.routes.prefix', ''),
+            'middleware' => addon()->config('addon.routes.middleware', []),
+            'namespace' => addon()->config('addon.namespace').'\Http\Controllers',
+        ];
 
-        $router->group(['domain' => $domain, 'prefix' => $prefix, 'namespace' => $namespace], function ($router) {
-            require __DIR__.'/../Http/routes.php';
+        $files = array_map(function ($file) {
+            return addon()->path($file);
+        }, addon()->config('addon.routes.files', ['classes/Http/routes.php']));
+
+        $router->group($attributes, function ($router) use ($files) {
+            foreach ($files as $file) {
+                require $file;
+            }
         });
     }
 }
