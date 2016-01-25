@@ -32,6 +32,9 @@ return [
         'middlewares' => [
         ],
         'route_middlewares' => [
+            'auth' => new ClassName('Http\Middleware\Authenticate'),
+            'auth.basic' => new ClassName('\Illuminate\Auth\Middleware\AuthenticateWithBasicAuth'),
+            'guest' => new ClassName('Http\Middleware\RedirectIfAuthenticated'),
         ],
     ],
     'includes_global_aliases' => true,
