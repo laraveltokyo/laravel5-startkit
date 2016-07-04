@@ -15,7 +15,6 @@ return [
         'config' => 'config',
         'assets' => 'assets',
         'lang' => 'lang',
-        'specs' => 'specs',
         'views' => 'views',
         'tests' => 'tests',
     ],
@@ -23,9 +22,6 @@ return [
         Providers\AddonServiceProvider::class,
         Providers\DatabaseServiceProvider::class,
         Providers\RouteServiceProvider::class,
-    ],
-    'includes_global_aliases' => true,
-    'aliases' => [
     ],
     'console' => [
         'commands' => [
@@ -35,22 +31,26 @@ return [
         'middlewares' => [
         ],
         'route_middlewares' => [
-            'auth' => Http\Middleware\Authenticate::class,
+            'auth' => Middleware\Authenticate::class,
             'auth.basic' => Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-            'guest' => Http\Middleware\RedirectIfAuthenticated::class,
+            'guest' => Middleware\RedirectIfAuthenticated::class,
         ],
     ],
     'routes' => [
         'domain' => env('APP_ADDON_DOMAIN'),
         'prefix' => env('APP_ADDON_PATH', '/'),
+        'namespace' => __NAMESPACE__.'\Controllers',
         'middleware' => [
             'web',
         ],
         'files' => [
-            'classes/Http/routes.php',
+            'routes/web.php',
         ],
         'landing' => '/',
         'home' => '/home',
         'login' => '/login',
+    ],
+    'includes_global_aliases' => true,
+    'aliases' => [
     ],
 ];

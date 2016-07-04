@@ -1,4 +1,4 @@
-@extends('errors.template')
+@extends('errors.$layout')
 
 @section('title', 'Error')
 

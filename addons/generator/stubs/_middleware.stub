@@ -4,9 +4,6 @@ namespace {$namespace};
 
 use Closure;
 
-/**
- *  Custom class
- */
 class {$class}
 {
     /**

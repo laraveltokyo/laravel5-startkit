@@ -24,7 +24,7 @@ class DatabaseServiceProvider extends ServiceProvider
         ]);
 
         $this->seeds([
-            'test' => Seeds\Test::class,
+            'testing' => Seeds\Testing::class,
             'production' => Seeds\Production::class,
         ], 'test');
     }

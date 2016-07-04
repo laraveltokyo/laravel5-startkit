@@ -6,9 +6,6 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Jumilla\Versionia\Laravel\Support\Migration;
 
-/**
- *  Custom class
- */
 class {$class} extends Migration
 {
     /**

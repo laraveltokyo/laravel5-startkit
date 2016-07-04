@@ -6,9 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 use Jumilla\Versionia\Laravel\Support\Seeder;
 use Carbon\Carbon;
 
-/**
- *  Custom class
- */
 class {$class} extends Seeder
 {
     /**

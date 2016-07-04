@@ -4,9 +4,6 @@ namespace {$namespace};
 
 use Illuminate\Database\Eloquent\Model;
 
-/**
- *  Custom class
- */
 class {$class} extends Model
 {
     /**

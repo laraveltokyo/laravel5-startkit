@@ -2,9 +2,14 @@
 
 ### インストール方法
 
-#### Laravel 5.2
+#### Laravel 5.3
 ```Console
 $ composer create-project laravel-plus/laravel5 <directory>
+```
+
+#### Laravel 5.2
+```Console
+$ composer create-project laravel-plus/laravel5=5.2.* <directory>
 ```
 
 #### Laravel 5.1
@@ -29,7 +34,7 @@ $ composer create-project laravel-plus/laravel5=5.0.* <directory>
 	- [Faker - fzaninotto/faker](https://github.com/fzaninotto/faker)
 	- [PHP Coding Standards Fixer - fabpot/php-cs-fixer](https://github.com/friendsofphp/php-cs-fixer)
 - アドオン
-	- **auth** Laravel 5.2に添付されている標準認証MVCキット（ビューは5.0のもの)
+	- **auth** Laravel 5.3に添付されている標準認証MVCキット（ビューは5.0のもの)
 	- **debug** デバッグ支援キット
 	- **generator** ファイル生成コマンド **php artisan make:xxx** のスタブファイルカスタマイズキット
 - 追加コマンド (Extension Pack)

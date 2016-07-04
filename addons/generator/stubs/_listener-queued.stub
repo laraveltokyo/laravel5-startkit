@@ -6,9 +6,6 @@ use {$root_namespace}\Events\{$event};
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-/**
- *  Custom class
- */
 class {$class} implements ShouldQueue
 {
     use InteractsWithQueue;

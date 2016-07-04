@@ -29,7 +29,8 @@ class Framework_1_0 extends Migration
     {
         $this->createCacheTable();
         $this->createSessionsTable();
-        $this->createJobsTable();
+        $this->createJobTables();
+        $this->createNotificationTable();
     }
 
     /**
@@ -39,7 +40,8 @@ class Framework_1_0 extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('failed_jobs');
+        Schema::dropIfExists('notifications');
+        Schema::dropIfExists('jobs_failed');
         Schema::dropIfExists('jobs');
         Schema::dropIfExists('sessions');
         Schema::dropIfExists('cache');
@@ -81,25 +83,43 @@ class Framework_1_0 extends Migration
      *
      * @return void
      */
-    protected function createJobsTable()
+    protected function createJobTables()
     {
         Schema::create('jobs', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('queue');
-            $table->text('payload');
+            $table->longText('payload');
             $table->tinyInteger('attempts')->unsigned();
-            $table->tinyInteger('reserved')->unsigned();
             $table->unsignedInteger('reserved_at')->nullable();
             $table->unsignedInteger('available_at');
             $table->unsignedInteger('created_at');
+            $table->index(['queue', 'reserved_at']);
         });
 
-        Schema::create('failed_jobs', function (Blueprint $table) {
+        Schema::create('jobs_failed', function (Blueprint $table) {
             $table->increments('id');
             $table->text('connection');
             $table->text('queue');
             $table->longText('payload');
-            $table->timestamp('failed_at');
+            $table->longText('exception');
+            $table->timestamp('failed_at')->useCurrent();
+        });
+    }
+
+    /**
+     * Create 'notifications' table.
+     *
+     * @return void
+     */
+    protected function createNotificationTable()
+    {
+        Schema::create('notifications', function (Blueprint $table) {
+            $table->string('id')->primary();
+            $table->string('type');
+            $table->morphs('notifiable');
+            $table->text('data');
+            $table->timestamp('read_at')->nullable();
+            $table->timestamps();
         });
     }
 }

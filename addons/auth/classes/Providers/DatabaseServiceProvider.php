@@ -3,8 +3,8 @@
 namespace App\Auth\Providers;
 
 use Jumilla\Versionia\Laravel\Support\DatabaseServiceProvider as ServiceProvider;
-use App\Auth\Database\Migrations;
-use App\Auth\Database\Seeds;
+use App\Auth\Migrations;
+use App\Auth\Seeds;
 
 class DatabaseServiceProvider extends ServiceProvider
 {

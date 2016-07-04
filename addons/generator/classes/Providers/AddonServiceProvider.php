@@ -2,7 +2,9 @@
 
 namespace App\Generator\Providers;
 
-class AddonServiceProvider extends \Illuminate\Support\ServiceProvider
+use Jumilla\Addomnipot\Laravel\Support\AddonServiceProvider as ServiceProvider;
+
+class AddonServiceProvider extends ServiceProvider
 {
     /**
      * Register the service provider.

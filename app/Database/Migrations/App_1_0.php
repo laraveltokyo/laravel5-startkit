@@ -29,6 +29,7 @@ class App_1_0 extends Migration
      */
     public function up()
     {
+//        $this->createTable();
     }
 
     /**
@@ -38,7 +39,7 @@ class App_1_0 extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('xxx');
+//        Schema::dropIfExists('xxx');
     }
 
     /**

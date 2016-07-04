@@ -4,9 +4,6 @@ namespace {$namespace};
 
 use Illuminate\Support\ServiceProvider;
 
-/**
- *  Custom class
- */
 class {$class} extends ServiceProvider
 {
     /**

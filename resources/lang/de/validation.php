@@ -34,11 +34,15 @@ return [
     'different'            => ':attribute und :other müssen sich unterscheiden.',
     'digits'               => ':attribute muss :digits Stellen haben.',
     'digits_between'       => ':attribute muss zwischen :min und :max Stellen haben.',
+    'dimensions'           => ':attribute hat ungültige Bildabmessungen.',
+    'distinct'             => 'Das Feld :attribute beinhaltet einen bereits vorhandenen Wert.',
     'email'                => ':attribute Format ist ungültig.',
     'exists'               => 'Der gewählte Wert für :attribute ist ungültig.',
+    'file'                 => ':attribute muss eine Datei sein.',
     'filled'               => ':attribute muss ausgefüllt sein.',
     'image'                => ':attribute muss ein Bild sein.',
     'in'                   => 'Der gewählte Wert für :attribute ist ungültig.',
+    'in_array'             => 'Der gewählte Wert für :attribute kommt nicht in :other vor.',
     'integer'              => ':attribute muss eine ganze Zahl sein.',
     'ip'                   => ':attribute muss eine gültige IP-Adresse sein.',
     'json'                 => ':attribute muss ein gültiger JSON-String sein.',
@@ -57,6 +61,7 @@ return [
     ],
     'not_in'               => 'Der gewählte Wert für :attribute ist ungültig.',
     'numeric'              => ':attribute muss eine Zahl sein.',
+    'present'              => 'Das Feld :attribute muss vorhanden sein.',
     'regex'                => ':attribute Format ist ungültig.',
     'required'             => ':attribute muss ausgefüllt sein.',
     'required_if'          => ':attribute muss ausgefüllt sein, wenn :other :value ist.',
@@ -106,7 +111,9 @@ return [
     */
 
     'attributes' => [
-        //
+        'username' => 'Benutzername',
+        'password' => 'Passwort',
+        'email'    => 'E-Mail',
     ],
 
 ];

@@ -4,9 +4,6 @@ namespace {$namespace};
 
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-/**
- *  Custom class
- */
 class {$class}
 {
     use HandlesAuthorization;

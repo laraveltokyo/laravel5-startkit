@@ -6,9 +6,6 @@ use {$root_namespace}\Events\Event;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-/**
- *  Custom class
- */
 class {$class} extends Event
 {
     use SerializesModels;

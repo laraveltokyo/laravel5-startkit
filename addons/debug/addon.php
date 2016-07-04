@@ -32,17 +32,18 @@ return [
         'route_middlewares' => [
         ],
     ],
-    'includes_global_aliases' => true,
-    'aliases' => [
-    ],
     'routes' => [
         'domain' => env('APP_ADDON_DOMAIN'),
         'prefix' => env('APP_ADDON_PATH', 'debug'),
+        'namespace' => __NAMESPACE__.'\Controllers',
         'middleware' => [
             'web',
         ],
         'files' => [
-            'classes/Http/routes.php',
+            'routes.php',
         ],
+    ],
+    'includes_global_aliases' => true,
+    'aliases' => [
     ],
 ];
