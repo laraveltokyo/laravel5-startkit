@@ -1,19 +1,31 @@
-const elixir = require('laravel-elixir');
-
-require('laravel-elixir-vue');
+const drinkbar = require('gulp-drinkbar');
 
 /*
  |--------------------------------------------------------------------------
- | Elixir Asset Management
+ | Gulp Drinkbar
  |--------------------------------------------------------------------------
- |
- | Elixir provides a clean, fluent API for defining some basic Gulp tasks
- | for your Laravel application. By default, we are compiling the Sass
- | file for our application, as well as publishing vendor resources.
  |
  */
 
-elixir(mix => {
-    mix.sass('app.scss')
-       .webpack('app.js');
-});
+drinkbar.task('style:app')
+	.sass({
+		input: 'resources/assets/sass/app.scss',
+		output: 'public/css',
+		config: {
+		},
+	})
+	.watch('resources/assets/css/**/*.scss')
+
+drinkbar.task('script:app')
+	.webpack({
+		input: 'resources/assets/js/app.js',
+		output: 'public/js/app.js',
+		config: {
+		},
+	})
+	.watch('resources/assets/js/**/*.js')
+
+drinkbar.taskGroups();
+
+drinkbar.task('default', ['style', 'script'])
+	.define()
