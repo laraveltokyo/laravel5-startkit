@@ -16,11 +16,13 @@ return [
     'accepted'             => ':attribute kabul edilmelidir.',
     'active_url'           => ':attribute dogry URL bolmalydyr.',
     'after'                => ':attribute şundan has köne sene bolmalydyr :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => ':attribute dine harplardan durmalydyr.',
     'alpha_dash'           => ':attribute dine harplardan, sanlardan we tirelerden durmalydyr.',
     'alpha_num'            => ':attribute dine harplardan we sanlardan durmalydyr.',
     'array'                => ':attribute ýygyndy bolmalydyr.',
     'before'               => ':attribute şundan has irki sene bolmalydyr :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => ':attribute :min - :max arasynda bolmalydyr.',
         'file'    => ':attribute :min - :max kilobaýt arasynda bolmalydyr.',
@@ -53,6 +55,7 @@ return [
         'array'   => ':attribute iň az :max maddadan ybarat bolmalydyr.',
     ],
     'mimes'                => ':attribute faýlň formaty :values bolmalydyr.',
+    'mimetypes'            => ':attribute faýlň formaty :values bolmalydyr.',
     'min'                  => [
         'numeric' => ':attribute mukdary :min dan köp bolmalydyr.',
         'file'    => ':attribute mukdary :min kilobaýtdan köp bolmalydyr.',
@@ -80,6 +83,7 @@ return [
     'string'               => 'The :attribute must be a string.',
     'timezone'             => ':attribute dogry zolak bolmalydyr.',
     'unique'               => ':attribute önden hasaba alyndy.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => ':attribute formaty ýalňyş.',
 
     /*

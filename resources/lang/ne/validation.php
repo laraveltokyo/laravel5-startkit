@@ -16,11 +16,13 @@ return [
     'accepted'             => ':attribute स्वीकार गरिएको हुनुपर्छ।',
     'active_url'           => ':attribute URL अमान्य छ।',
     'after'                => ':attribute को मिति :date भन्दा पछि हुनुपर्छ।',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => ':attribute मा अक्षरहरु मात्र हुनसक्छ।',
     'alpha_dash'           => ':attribute मा अक्षर, संख्या र ड्यासहरू मात्र हुनसक्छ।',
     'alpha_num'            => ':attribute मा अक्षर र संख्याहरू मात्र हुनसक्छ।',
     'array'                => ':attribute array हुनुपर्छ।',
     'before'               => ':attribute को मिति :date भन्दा अघि हुनुपर्छ।',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => ':attribute :min र :max को बिचमा हुनुपर्छ।',
         'file'    => ':attribute :min र :max kilobytes को बिचमा हुनुपर्छ।',
@@ -53,6 +55,7 @@ return [
         'array'   => ':attribute मा :max भन्दा बढी आइटम हुनुहुदैन।',
     ],
     'mimes'                => ':attribute :values प्रकारको फाइल हुनुपर्छ।',
+    'mimetypes'            => ':attribute :values प्रकारको फाइल हुनुपर्छ।',
     'min'                  => [
         'numeric' => ':attribute कम्तिमा :min हुनुपर्छ।',
         'file'    => ':attribute कम्तिमा :min kilobytesको हुनुपर्छ।',
@@ -80,6 +83,7 @@ return [
     'string'               => ':attribute string हुनुपर्छ।',
     'timezone'             => ':attribute मान्य समय क्षेत्र हुनुपर्छ।',
     'unique'               => 'यो :attribute पहिले नै लिई सकेको छ।',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => ':attribute को ढांचा मिलेन।',
 
     /*

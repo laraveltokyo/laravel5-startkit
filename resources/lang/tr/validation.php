@@ -16,11 +16,13 @@ return [
     'accepted'             => ':attribute kabul edilmelidir.',
     'active_url'           => ':attribute geçerli bir URL olmalıdır.',
     'after'                => ':attribute şundan daha eski bir tarih olmalıdır :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => ':attribute sadece harflerden oluşmalıdır.',
     'alpha_dash'           => ':attribute sadece harfler, rakamlar ve tirelerden oluşmalıdır.',
     'alpha_num'            => ':attribute sadece harfler ve rakamlar içermelidir.',
     'array'                => ':attribute dizi olmalıdır.',
     'before'               => ':attribute şundan daha önceki bir tarih olmalıdır :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => ':attribute :min - :max arasında olmalıdır.',
         'file'    => ':attribute :min - :max arasındaki kilobayt değeri olmalıdır.',
@@ -53,6 +55,7 @@ return [
         'array'   => ':attribute değeri :max adedinden az nesneye sahip olmalıdır.',
     ],
     'mimes'                => ':attribute dosya biçimi :values olmalıdır.',
+    'mimetypes'            => ':attribute dosya biçimi :values olmalıdır.',
     'min'                  => [
         'numeric' => ':attribute değeri :min değerinden büyük olmalıdır.',
         'file'    => ':attribute değeri :min kilobayt değerinden büyük olmalıdır.',
@@ -80,6 +83,7 @@ return [
     'string'               => ':attribute dizge olmalıdır.',
     'timezone'             => ':attribute geçerli bir saat dilimi olmalıdır.',
     'unique'               => ':attribute daha önceden kayıt edilmiş.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => ':attribute biçimi geçersiz.',
 
     /*

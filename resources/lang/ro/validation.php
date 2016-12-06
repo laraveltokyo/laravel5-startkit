@@ -16,11 +16,13 @@ return [
     'accepted'             => 'Câmpul :attribute trebuie să fie acceptat.',
     'active_url'           => 'Câmpul :attribute nu este un URL valid.',
     'after'                => 'Câmpul :attribute trebuie să fie o dată după :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => 'Câmpul :attribute poate conține doar litere.',
     'alpha_dash'           => 'Câmpul :attribute poate conține doar litere, numere și cratime.',
     'alpha_num'            => 'Câmpul :attribute poate conține doar litere și numere.',
     'array'                => 'Câmpul :attribute trebuie să fie un array.',
     'before'               => 'Câmpul :attribute trebuie să fie o dată înainte de :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => 'Câmpul :attribute trebuie să fie între :min și :max.',
         'file'    => 'Câmpul :attribute trebuie să fie între :min și :max kiloocteți.',
@@ -53,6 +55,7 @@ return [
         'array'   => 'Câmpul :attribute nu poate avea mai mult de :max elemente.',
     ],
     'mimes'                => 'Câmpul :attribute trebuie să fie un fișier de tipul: :values.',
+    'mimetypes'            => 'Câmpul :attribute trebuie să fie un fișier de tipul: :values.',
     'min'                  => [
         'numeric' => 'Câmpul :attribute nu poate fi mai mic de :min.',
         'file'    => 'Câmpul :attribute trebuie să aibă cel puțin :min kiloocteți.',
@@ -80,6 +83,7 @@ return [
     'string'               => 'Câmpul :attribute trebuie să fie string.',
     'timezone'             => 'Câmpul :attribute trebuie să fie un fus orar valid.',
     'unique'               => 'Câmpul :attribute a fost deja folosit.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'Câmpul :attribute nu este un URL valid.',
 
     /*

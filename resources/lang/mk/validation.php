@@ -16,11 +16,13 @@ return [
     'accepted'             => 'Полето :attribute мора да биде прифатено.',
     'active_url'           => 'Полето :attribute не е валиден URL.',
     'after'                => 'Полето :attribute мора да биде датум после :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => 'Полето :attribute може да содржи само букви.',
     'alpha_dash'           => 'Полето :attribute може да содржи само букви, цифри, долна црта и тире.',
     'alpha_num'            => 'Полето :attribute може да содржи само букви и цифри.',
     'array'                => 'Полето :attribute мора да биде низа.',
     'before'               => 'Полето :attribute мора да биде датум пред :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => 'Полето :attribute мора да биде помеѓу :min и :max.',
         'file'    => 'Полето :attribute мора да биде помеѓу :min и :max килобајти.',
@@ -53,6 +55,7 @@ return [
         'array'   => 'Полето :attribute не може да има повеќе од :max карактери.',
     ],
     'mimes'                => 'Полето :attribute мора да биде фајл од типот: :values.',
+    'mimetypes'            => 'Полето :attribute мора да биде фајл од типот: :values.',
     'min'                  => [
         'numeric' => 'Полето :attribute мора да биде минимум :min.',
         'file'    => 'Полето :attribute мора да биде минимум :min килобајти.',
@@ -80,6 +83,7 @@ return [
     'string'               => 'The :attribute must be a string.',
     'timezone'             => 'The :attribute must be a valid zone.',
     'unique'               => 'Полето :attribute веќе постои.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'Полето :attribute не е во валиден формат.',
 
     /*

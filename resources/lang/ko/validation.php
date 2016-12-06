@@ -16,11 +16,13 @@ return [
     'accepted'             => ':attribute을(를) 반드시 동의해야 합니다.',
     'active_url'           => ':attribute은(는) 유효한 URL이 아닙니다.',
     'after'                => ':attribute은(는) 반드시 :date 이후 날짜여야 합니다.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => ':attribute은(는) 문자만 포함할 수 있습니다.',
     'alpha_dash'           => ':attribute은(는) 문자, 숫자, 대쉬(-)만 포함할 수 있습니다.',
     'alpha_num'            => ':attribute은(는) 문자와 숫자만 포함할 수 있습니다.',
     'array'                => ':attribute은(는) 반드시 배열이어야 합니다.',
     'before'               => ':attribute은(는) 반드시 :date 이전 날짜여야 합니다.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => ':attribute은(는) 반드시 :min에서 :max 사이여야 합니다.',
         'file'    => ':attribute은(는) 반드시 :min에서 :max 킬로바이트 사이여야 합니다.',
@@ -53,6 +55,7 @@ return [
         'array'   => ':attribute은(는) 반드시 :max 아이템보다 작아야 합니다.',
     ],
     'mimes'                => ':attribute은(는) 반드시 다음의 파일 형식이어야 합니다: :values.',
+    'mimetypes'            => ':attribute은(는) 반드시 다음의 파일 형식이어야 합니다: :values.',
     'min'                  => [
         'numeric' => ':attribute은(는) 반드시 :min 보다 커야 합니다.',
         'file'    => ':attribute은(는) 반드시 :min 킬로바이트보다 커야 합니다.',
@@ -80,6 +83,7 @@ return [
     'string'               => 'The :attribute must be a string.',
     'timezone'             => ':attribute은(는) 올바른 시간대 이어야 합니다.',
     'unique'               => ':attribute은(는) 이미 사용중 입니다.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => ':attribute 형식은 유효하지 않습니다.',
 
     /*

@@ -16,11 +16,13 @@ return [
     'accepted'             => ':attribute måste accepteras.',
     'active_url'           => ':attribute är inte en giltig webbadress.',
     'after'                => ':attribute måste vara ett datum efter den :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => ':attribute får endast innehålla bokstäver.',
     'alpha_dash'           => ':attribute får endast innehålla bokstäver, siffror och bindestreck.',
     'alpha_num'            => ':attribute får endast innehålla bokstäver och siffror.',
     'array'                => ':attribute måste vara en array.',
     'before'               => ':attribute måste vara ett datum innan den :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => ':attribute måste vara en siffra mellan :min och :max.',
         'file'    => ':attribute måste vara mellan :min till :max kilobyte stor.',
@@ -53,6 +55,7 @@ return [
         'array'   => ':attribute får inte innehålla mer än :max objekt.',
     ],
     'mimes'                => ':attribute måste vara en fil av typen: :values.',
+    'mimetypes'            => ':attribute måste vara en fil av typen: :values.',
     'min'                  => [
         'numeric' => ':attribute måste vara större än :min.',
         'file'    => ':attribute måste vara minst :min kilobyte stor.',
@@ -80,6 +83,7 @@ return [
     'string'               => ':attribute måste vara en sträng.',
     'timezone'             => ':attribute måste vara en giltig tidszon.',
     'unique'               => ':attribute används redan.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => ':attribute har ett ogiltigt format.',
 
     /*

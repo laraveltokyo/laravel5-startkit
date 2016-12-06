@@ -17,11 +17,13 @@ return [
     'accepted'             => 'Вы павінны прыняць :attribute.',
     'active_url'           => 'Поле :attribute утрымлівае несапраўдны URL.',
     'after'                => 'У полі :attribute павінна быць дата пасля :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => 'Поле :attribute можа мець толькі літары.',
     'alpha_dash'           => 'Поле :attribute можа мець толькі літары, лічбы і злучок.',
     'alpha_num'            => 'Поле :attribute можа мець толькі літары і лічбы.',
     'array'                => 'Поле :attribute павінна быць масівам.',
     'before'               => 'У полі :attribute павінна быць дата да :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => 'Поле :attribute павінна быць паміж :min і :max.',
         'file'    => 'Памер файла ў поле :attribute павінен быць паміж :min і :max кілабайт.',
@@ -54,6 +56,7 @@ return [
         'array'   => 'Колькасць элементаў у поле :attribute не можа перавышаць :max.',
     ],
     'mimes'                => 'Поле :attribute павінна быць файлам аднаго з наступных тыпаў: :values.',
+    'mimetypes'            => 'Поле :attribute павінна быць файлам аднаго з наступных тыпаў: :values.',
     'min'                  => [
         'numeric' => 'Поле :attribute павінна быць не менш :min.',
         'file'    => 'Памер файла ў полее :attribute павінен быць не менш :min кілабайт.',
@@ -81,6 +84,7 @@ return [
     'string'               => 'Поле :attribute павінна быць радком.',
     'timezone'             => 'Поле :attribute павінна быць сапраўдным гадзінным поясам.',
     'unique'               => 'Такое значэнне поля :attribute ўжо існуе.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'Поле :attribute мае памылковы фармат.',
 
     /*

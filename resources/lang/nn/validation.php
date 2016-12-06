@@ -16,11 +16,13 @@ return [
     'accepted'             => ':attribute må aksepterast.',
     'active_url'           => ':attribute er ikkje ein gyldig URL.',
     'after'                => ':attribute må vere ein dato etter :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => ':attribute må berre vere av bokstavar.',
     'alpha_dash'           => ':attribute må berre vere av bokstavar, tal og bindestrekar.',
     'alpha_num'            => ':attribute må berre vere av bokstavar og tal.',
     'array'                => ':attribute må vere ei matrise.',
     'before'               => ':attribute må vere ein dato før :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => ':attribute skal vere mellom :min - :max.',
         'file'    => ':attribute skal vere mellom :min - :max kilobytes.',
@@ -53,6 +55,7 @@ return [
         'array'   => ':attribute skal ikkje ha fleire enn :max element.',
     ],
     'mimes'                => ':attribute skal vere ei fil av typen: :values.',
+    'mimetypes'            => ':attribute skal vere ei fil av typen: :values.',
     'min'                  => [
         'numeric' => ':attribute skal vere større enn :min.',
         'file'    => ':attribute skal vere større enn :min kilobytes.',
@@ -80,6 +83,7 @@ return [
     'string'               => ':attribute må vere ein tekststreng.',
     'timezone'             => ':attribute må vere ei gyldig tidssone.',
     'unique'               => ':attribute er allereie i bruk.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'Formatet på :attribute er ugyldig.',
 
     /*

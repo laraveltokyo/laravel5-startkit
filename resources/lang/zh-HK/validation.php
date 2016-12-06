@@ -15,12 +15,14 @@ return [
 
     'accepted'             => '必須接受 :attribute。',
     'active_url'           => ':attribute 並非一個有效的網址。',
-    'after'                => ':attribute 必須要在 :date 之後。',
+    'after'                => ':attribute 必須要晚於 :date。',
+    'after_or_equal'       => ':attribute 必須要等於 :date 或更晚。',
     'alpha'                => ':attribute 只能以字母組成。',
     'alpha_dash'           => ':attribute 只能以字母、數字及斜線組成。',
     'alpha_num'            => ':attribute 只能以字母及數字組成。',
     'array'                => ':attribute 必須為陣列。',
-    'before'               => ':attribute 必須要在 :date 之前。',
+    'before'               => ':attribute 必須要早於 :date。',
+    'before_or_equal'      => ':attribute 必須要等於 :date 或更早。',
     'between'              => [
         'numeric' => ':attribute 必須介乎 :min 至 :max 之間。',
         'file'    => ':attribute 必須介乎 :min 至 :max kb 之間。 ',
@@ -36,7 +38,7 @@ return [
     'digits_between'       => ':attribute 必須介乎 :min 至 :max 位數字。',
     'dimensions'           => ':attribute 圖片尺寸不正確。',
     'distinct'             => ':attribute 已經存在。',
-    'email'                => ':attribute 的格式無效。',
+    'email'                => ':attribute 必須是有效的電郵地址。',
     'exists'               => ':attribute 不存在。',
     'file'                 => ':attribute 必須是文件。',
     'filled'               => ':attribute 不能留空。',
@@ -53,6 +55,7 @@ return [
         'array'   => ':attribute 不能多於 :max 個項目。',
     ],
     'mimes'                => ':attribute 必須為 :values 的檔案。',
+    'mimetypes'            => ':attribute 必須為 :values 的檔案。',
     'min'                  => [
         'numeric' => ':attribute 不能小於 :min。',
         'file'    => ':attribute 不能小於 :min kb。',
@@ -80,6 +83,7 @@ return [
     'string'               => ':attribute 必須是一個字符串',
     'timezone'             => ':attribute 必須是一個正確的時區值。',
     'unique'               => ':attribute 已經存在。',
+    'uploaded'             => ':attribute 上傳失敗。',
     'url'                  => ':attribute 的格式錯誤。',
 
     /*
@@ -113,7 +117,7 @@ return [
     'attributes'           => [
         'name'                  => '名稱',
         'username'              => '使用者名',
-        'email'                 => '郵箱',
+        'email'                 => '電郵',
         'first_name'            => '名',
         'last_name'             => '姓',
         'password'              => '密碼',

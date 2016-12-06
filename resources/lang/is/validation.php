@@ -16,11 +16,13 @@ return [
     'accepted'             => 'Reiturinn :attribute verður að vera samþykktur.',
     'active_url'           => 'Reiturinn :attribute er ekki leyfileg vefslóð.',
     'after'                => 'Reiturinn :attribute verður að vera dagsetning eftir :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => 'Reiturinn :attribute má aðeins innihalda bókstafi.',
     'alpha_dash'           => 'Reiturinn :attribute má aðeins innihalda bókstafi, tölur og undirstikanir.',
     'alpha_num'            => 'Reiturinn :attribute má aðeins innihalda bókstafi og tölur.',
     'array'                => 'Reiturinn :attribute verður að vera fylki.',
     'before'               => 'Reiturinn :attribute verður að vera dagsetning eftir :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => 'Reiturinn :attribute verður að vera á milli :min - :max.',
         'file'    => 'Reiturinn :attribute verður að vera á milli :min - :max kílóbæta.',
@@ -53,6 +55,7 @@ return [
         'array'   => 'Reiturinn :attribute verður að innihalda færri en :max stök.',
     ],
     'mimes'                => 'Reiturinn :attribute verður að vera skrá af gerðinni: :values.',
+    'mimetypes'            => 'Reiturinn :attribute verður að vera skrá af gerðinni: :values.',
     'min'                  => [
         'numeric' => 'Reiturinn :attribute verður að vera að lágmarki :min tölustafir.',
         'file'    => 'Reiturinn :attribute verður að vera að lágmarki :min kílóbæt.',
@@ -80,6 +83,7 @@ return [
     'string'               => 'The :attribute must be a string.',
     'timezone'             => 'Reiturinn :attribute verður að vera rétt tímabelti.',
     'unique'               => 'Reiturinn :attribute er því miður ekki leyfilegur. Það er annar eins.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'Reiturinn :attribute verður að vera netslóð.',
 
     /*

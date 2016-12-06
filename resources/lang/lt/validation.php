@@ -16,11 +16,13 @@ return [
     'accepted'             => 'Laukas :attribute turi būti priimtas.',
     'active_url'           => 'Laukas :attribute nėra galiojantis internetinis adresas.',
     'after'                => 'Lauko :attribute reikšmė turi būti po :date datos.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => 'Laukas :attribute gali turėti tik raides.',
     'alpha_dash'           => 'Laukas :attribute gali turėti tik raides, skaičius ir brūkšnelius.',
     'alpha_num'            => 'Laukas :attribute gali turėti tik raides ir skaičius.',
     'array'                => 'Laukas :attribute turi būti masyvas.',
     'before'               => 'Laukas :attribute turi būti data prieš :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => 'Lauko :attribute reikšmė turi būti tarp :min ir :max.',
         'file'    => 'Failo dydis lauke :attribute turi būti tarp :min ir :max kilobaitų.',
@@ -53,6 +55,7 @@ return [
         'array'   => 'Elementų kiekis lauke :attribute negali turėti daugiau nei :max elementų.',
     ],
     'mimes'                => 'Lauko reikšmė :attribute turi būti failas vieno iš sekančių tipų: :values.',
+    'mimetypes'            => 'Lauko reikšmė :attribute turi būti failas vieno iš sekančių tipų: :values.',
     'min'                  => [
         'numeric' => 'Lauko :attribute reikšmė turi būti ne mažesnė nei :min.',
         'file'    => 'Failo dydis lauke :attribute turi būti ne mažesnis nei :min kilobaitų.',
@@ -80,6 +83,7 @@ return [
     'string'               => 'Laukas :attribute turi būti tekstinis.',
     'timezone'             => 'Lauko :attribute reikšmė turi būti galiojanti laiko zona.',
     'unique'               => 'Tokia :attribute reikšmė jau pasirinkta.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'Negaliojantis lauko :attribute formatas.',
 
     /*

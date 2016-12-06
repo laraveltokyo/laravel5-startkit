@@ -16,11 +16,13 @@ return [
     'accepted'             => ':attribute باید پذیرفته شده باشد.',
     'active_url'           => 'آدرس :attribute معتبر نیست',
     'after'                => ':attribute باید تاریخی بعد از :date باشد.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => ':attribute باید شامل حروف الفبا باشد.',
     'alpha_dash'           => ':attribute باید شامل حروف الفبا و عدد و خظ تیره(-) باشد.',
     'alpha_num'            => ':attribute باید شامل حروف الفبا و عدد باشد.',
     'array'                => ':attribute باید شامل آرایه باشد.',
     'before'               => ':attribute باید تاریخی قبل از :date باشد.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => ':attribute باید بین :min و :max باشد.',
         'file'    => ':attribute باید بین :min و :max کیلوبایت باشد.',
@@ -34,11 +36,11 @@ return [
     'different'            => ':attribute و :other باید متفاوت باشند.',
     'digits'               => ':attribute باید :digits رقم باشد.',
     'digits_between'       => ':attribute باید بین :min و :max رقم باشد.',
-    'dimensions'           => 'The :attribute has invalid image dimensions.',
+    'dimensions'           => ':attribute دارای ابعاد تصویر نامعتبر می‌باشد.',
     'distinct'             => 'فیلد :attribute دارای یک مقدار تکراری می‌باشد.',
     'email'                => 'فرمت :attribute معتبر نیست.',
     'exists'               => ':attribute انتخاب شده، معتبر نیست.',
-    'file'                 => 'The :attribute must be a file.',
+    'file'                 => ':attribute باید یک فایل باشد',
     'filled'               => 'فیلد :attribute الزامی است',
     'image'                => ':attribute باید تصویر باشد.',
     'in'                   => ':attribute انتخاب شده، معتبر نیست.',
@@ -53,6 +55,7 @@ return [
         'array'   => ':attribute نباید بیشتر از :max آیتم باشد.',
     ],
     'mimes'                => ':attribute باید یکی از فرمت های :values باشد.',
+    'mimetypes'            => ':attribute باید یکی از فرمت های :values باشد.',
     'min'                  => [
         'numeric' => ':attribute نباید کوچکتر از :min باشد.',
         'file'    => ':attribute نباید کوچکتر از :min کیلوبایت باشد.',
@@ -80,6 +83,7 @@ return [
     'string'               => 'فیلد :attribute باید یک String باشد.',
     'timezone'             => 'فیلد :attribute باید یک منطقه صحیح باشد.',
     'unique'               => ':attribute قبلا انتخاب شده است.',
+    'uploaded'             => 'فایل :attribute با موفقیت آپلود نشد.',
     'url'                  => 'فرمت آدرس :attribute اشتباه است.',
 
     /*
@@ -139,6 +143,7 @@ return [
         'time'                  => 'زمان',
         'available'             => 'موجود',
         'size'                  => 'اندازه',
+        'terms'                 => 'شرایط',
     ],
 
 ];

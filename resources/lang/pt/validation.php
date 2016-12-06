@@ -16,11 +16,13 @@ return [
     'accepted'             => 'O campo :attribute deverá ser aceite.',
     'active_url'           => 'O campo :attribute não contém um URL válido.',
     'after'                => 'O campo :attribute deverá conter uma data posterior a :date.',
+    'after_or_equal'       => 'O campo :attribute deverá conter uma data posterior ou igual a :date.',
     'alpha'                => 'O campo :attribute deverá conter apenas letras.',
     'alpha_dash'           => 'O campo :attribute deverá conter apenas letras, números e traços.',
     'alpha_num'            => 'O campo :attribute deverá conter apenas letras e números .',
     'array'                => 'O campo :attribute deverá conter uma coleção de elementos.',
     'before'               => 'O campo :attribute deverá conter uma data anterior a :date.',
+    'before_or_equal'      => 'O Campo :attribute deverá conter uma data anterior ou igual a :date.',
     'between'              => [
         'numeric' => 'O campo :attribute deverá ter um valor entre :min - :max.',
         'file'    => 'O campo :attribute deverá ter um tamanho entre :min - :max kilobytes.',
@@ -53,6 +55,7 @@ return [
         'array'   => 'O campo :attribute não deverá conter mais de :max elementos.',
     ],
     'mimes'                => 'O campo :attribute deverá conter um ficheiro do tipo: :values.',
+    'mimetypes'            => 'O campo :attribute deverá conter um ficheiro do tipo: :values.',
     'min'                  => [
         'numeric' => 'O campo :attribute deverá ter um valor superior ou igual a :min.',
         'file'    => 'O campo :attribute deverá ter no mínimo :min kilobytes.',
@@ -80,6 +83,7 @@ return [
     'string'               => 'O campo :attribute deverá conter texto.',
     'timezone'             => 'O campo :attribute deverá ter um fuso horário válido.',
     'unique'               => 'O valor indicado para o campo :attribute já se encontra registado.',
+    'uploaded'             => 'O upload do ficheiro :attribute falhou.',
     'url'                  => 'O formato do URL indicado para o campo :attribute é inválido.',
 
     /*

@@ -16,11 +16,13 @@ return [
     'accepted'             => ':attribute debe ser aceptado.',
     'active_url'           => ':attribute non é unha URL válida.',
     'after'                => ':attribute debe ser unha data posterior a :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => ':attribute só debe conter letras.',
     'alpha_dash'           => ':attribute só debe conter letras, números e guións.',
     'alpha_num'            => ':attribute só debe conter letras e números.',
     'array'                => ':attribute debe ser un conxunto.',
     'before'               => ':attribute debe ser unha data anterior a :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => ':attribute debe estar entre :min e :max.',
         'file'    => 'O tamaño de :attribute debe estar entre :min e :max quilobites.',
@@ -53,6 +55,7 @@ return [
         'array'   => ':attribute non debe conter máis de :max elementos.',
     ],
     'mimes'                => ':attribute debe ser un arquivo de tipo: :values.',
+    'mimetypes'            => ':attribute debe ser un arquivo de tipo: :values.',
     'min'                  => [
         'numeric' => ':attribute debe ser polo menos :min.',
         'file'    => 'O tamaño de :attribute debe ser polo menos de :min quilobites.',
@@ -80,6 +83,7 @@ return [
     'string'               => ':attribute debe ser unha cadea de caracteres.',
     'timezone'             => ':attribute debe ser unha zona válida.',
     'unique'               => ':attribute xa foi empregado.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'O formato de :attribute é inválido.',
 
     /*

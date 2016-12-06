@@ -16,11 +16,13 @@ return [
     'accepted'             => ':attribute musí byť akceptovaný.',
     'active_url'           => ':attribute má neplatnú URL adresu.',
     'after'                => ':attribute musí byť dátum po :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => ':attribute môže obsahovať len písmená.',
     'alpha_dash'           => ':attribute môže obsahovať len písmená, čísla a pomlčky.',
     'alpha_num'            => ':attribute môže obsahovať len písmená, čísla.',
     'array'                => ':attribute musí byť pole.',
     'before'               => ':attribute musí byť dátum pred :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => ':attribute musí mať rozsah :min - :max.',
         'file'    => ':attribute musí mať rozsah :min - :max kilobajtov.',
@@ -53,6 +55,7 @@ return [
         'array'   => ':attribute nemôže mať viac ako :max prvkov.',
     ],
     'mimes'                => ':attribute musí byť súbor s koncovkou: :values.',
+    'mimetypes'            => ':attribute musí byť súbor s koncovkou: :values.',
     'min'                  => [
         'numeric' => ':attribute musí mať aspoň :min.',
         'file'    => ':attribute musí mať aspoň :min kilobajtov.',
@@ -80,6 +83,7 @@ return [
     'string'               => ':attribute musí byť reťazec znakov.',
     'timezone'             => ':attribute musí byť platné časové pásmo.',
     'unique'               => ':attribute už existuje.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => ':attribute musí mať formát URL.',
 
     /*

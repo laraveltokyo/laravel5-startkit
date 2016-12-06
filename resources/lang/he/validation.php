@@ -16,11 +16,13 @@ return [
     'accepted'             => 'שדה :attribute חייב להיות מסומן.',
     'active_url'           => 'שדה :attribute הוא לא כתובת אתר תקנית.',
     'after'                => 'שדה :attribute חייב להיות תאריך אחרי :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => 'שדה :attribute יכול להכיל אותיות בלבד.',
     'alpha_dash'           => 'שדה :attribute יכול להכיל אותיות, מספרים ומקפים בלבד.',
     'alpha_num'            => 'שדה :attribute יכול להכיל אותיות ומספרים בלבד.',
     'array'                => 'שדה :attribute חייב להיות מערך.',
     'before'               => 'שדה :attribute חייב להיות תאריך לפני :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => 'שדה :attribute חייב להיות בין :min ל-:max.',
         'file'    => 'שדה :attribute חייב להיות בין :min ל-:max קילובייטים.',
@@ -53,6 +55,7 @@ return [
         'array'   => 'שדה :attribute לא יכול להכיל יותר מ-:max פריטים.',
     ],
     'mimes'                => 'שדה :attribute צריך להיות קובץ מסוג: :values.',
+    'mimetypes'            => 'שדה :attribute צריך להיות קובץ מסוג: :values.',
     'min'                  => [
         'numeric' => 'שדה :attribute חייב להיות לפחות :min.',
         'file'    => 'שדה :attribute חייב להיות לפחות :min קילובייטים.',
@@ -80,6 +83,7 @@ return [
     'string'               => 'שדה :attribute חייב להיות מחרוזת.',
     'timezone'             => 'שדה :attribute חייב להיות איזור תקני.',
     'unique'               => 'שדה :attribute כבר תפוס.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'שדה :attribute בעל פורמט שאינו תקין.',
 
     /*

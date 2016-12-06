@@ -16,11 +16,13 @@ return [
     'accepted'             => ':attribute skal accepteres.',
     'active_url'           => ':attribute er ikke en gyldig URL.',
     'after'                => ':attribute skal være en dato efter :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => ':attribute må kun bestå af bogstaver.',
     'alpha_dash'           => ':attribute må kun bestå af bogstaver, tal og bindestreger.',
     'alpha_num'            => ':attribute må kun bestå af bogstaver og tal.',
     'array'                => ':attribute skal være et array.',
     'before'               => ':attribute skal være en dato før :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => ':attribute skal være mellem :min - :max.',
         'file'    => ':attribute skal være mellem :min - :max kilobytes.',
@@ -34,11 +36,11 @@ return [
     'different'            => ':attribute og :other skal være forskellige.',
     'digits'               => ':attribute skal have :digits cifre.',
     'digits_between'       => ':attribute skal have mellem :min og :max cifre.',
-    'dimensions'           => 'The :attribute has invalid image dimensions.',
+    'dimensions'           => ':attribute har forkerte billede dimensioner.',
     'distinct'             => ':attribute har en duplikatværdi.',
     'email'                => ':attribute skal være en gyldig e-mailadresse.',
     'exists'               => 'Det valgte :attribute er ugyldig.',
-    'file'                 => 'The :attribute must be a file.',
+    'file'                 => ':attribute skal være en fil.',
     'filled'               => ':attribute skal udfyldes.',
     'image'                => ':attribute skal være et billede.',
     'in'                   => 'Det valgte :attribute er ugyldig.',
@@ -53,6 +55,7 @@ return [
         'array'   => ':attribute må ikke indeholde mere end :max elementer.',
     ],
     'mimes'                => ':attribute skal være en fil af typen: :values.',
+    'mimetypes'            => ':attribute skal være en fil af typen: :values.',
     'min'                  => [
         'numeric' => ':attribute skal være mindst :min.',
         'file'    => ':attribute skal være mindst :min kilobytes.',
@@ -80,6 +83,7 @@ return [
     'string'               => ':attribute skal være en streng.',
     'timezone'             => ':attribute skal være en gyldig tidszone.',
     'unique'               => ':attribute er allerede taget.',
+    'uploaded'             => ':attribute fejlene i uploaden.',
     'url'                  => ':attribute formatet er ugyldigt.',
 
     /*

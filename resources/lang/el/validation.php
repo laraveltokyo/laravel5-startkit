@@ -16,11 +16,13 @@ return [
     'accepted'             => 'Το πεδίο :attribute πρέπει να γίνει αποδεκτό.',
     'active_url'           => 'Το πεδίο :attribute δεν είναι αποδεκτή διεύθυνση URL.',
     'after'                => 'Το πεδίο :attribute πρέπει να είναι μία ημερομηνία μετά από :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => 'Το πεδίο :attribute μπορεί να περιέχει μόνο γράμματα.',
     'alpha_dash'           => 'Το πεδίο :attribute μπορεί να περιέχει μόνο γράμματα, αριθμούς, και παύλες.',
     'alpha_num'            => 'Το πεδίο :attribute μπορεί να περιέχει μόνο γράμματα και αριθμούς.',
     'array'                => 'Το πεδίο :attribute πρέπει να είναι ένας πίνακας.',
     'before'               => 'Το πεδίο :attribute πρέπει να είναι μία ημερομηνία πριν από :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => 'Το πεδίο :attribute πρέπει να είναι μεταξύ :min - :max.',
         'file'    => 'Το πεδίο :attribute πρέπει να είναι μεταξύ :min - :max kilobytes.',
@@ -53,6 +55,7 @@ return [
         'array'   => 'Το πεδίο :attribute δεν μπορεί να έχει περισσότερα από :max αντικείμενα.',
     ],
     'mimes'                => 'Το πεδίο :attribute πρέπει να είναι αρχείο τύπου: :values.',
+    'mimetypes'            => 'Το πεδίο :attribute πρέπει να είναι αρχείο τύπου: :values.',
     'min'                  => [
         'numeric' => 'Το πεδίο :attribute πρέπει να είναι τουλάχιστον :min.',
         'file'    => 'Το πεδίο :attribute πρέπει να είναι τουλάχιστον :min kilobytes.',
@@ -80,6 +83,7 @@ return [
     'string'               => 'Το πεδίο :attribute πρέπει να είναι αλφαριθμητικό.',
     'timezone'             => 'Το πεδίο :attribute πρέπει να είναι μία έγκυρη ζώνη ώρας.',
     'unique'               => 'Το πεδίο :attribute έχει ήδη εκχωρηθεί.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'Το πεδίο :attribute δεν είναι έγκυρη διεύθυνση URL.',
 
     /*
