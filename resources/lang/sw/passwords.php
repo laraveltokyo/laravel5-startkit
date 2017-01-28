@@ -4,7 +4,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Password Reminder Language Lines
+    | Password Reset Language Lines
     |--------------------------------------------------------------------------
     |
     | The following language lines are the default lines which match reasons
@@ -13,10 +13,9 @@ return [
     |
     */
 
-    'password' => 'Lösenord måste innehålla minst sex tecken och matcha varandra.',
-    'reset'    => 'Lösenordet har blivit återställt!',
-    'sent'     => 'Lösenordspåminnelse skickad!',
-    'token'    => 'Koden för lösenordsåterställning är ogiltig.',
-    'user'     => 'Det finns ingen användare med den e-postadressen.',
-
+    'password' => 'Lazima nenosiri liwe angalau na urefu wa herufi sita na lazima lilingane na uthibitisho.',
+    'reset'    => 'Nenosiri lako limefufuliwa upya!',
+    'sent'     => 'Tumekutumia barua pepe ya fungo la kufufua nenosiri!',
+    'token'    => 'Huu ufufuzi wa nenosiri si halali.',
+    'user'     => 'Hatupati mtumiaji wa hiyo anuani ya barua pepe.',
 ];

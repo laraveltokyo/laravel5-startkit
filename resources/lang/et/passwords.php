@@ -4,7 +4,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Password Reminder Language Lines
+    | Password Reset Language Lines
     |--------------------------------------------------------------------------
     |
     | The following language lines are the default lines which match reasons
@@ -13,10 +13,10 @@ return [
     |
     */
 
-    'password' => 'Lösenord måste innehålla minst sex tecken och matcha varandra.',
-    'reset'    => 'Lösenordet har blivit återställt!',
-    'sent'     => 'Lösenordspåminnelse skickad!',
-    'token'    => 'Koden för lösenordsåterställning är ogiltig.',
-    'user'     => 'Det finns ingen användare med den e-postadressen.',
+    'password' => 'Parool peab olema vähemalt 6 tähemärki pikk ja vastama kinnitusele.',
+    'reset'    => 'Sinu parool on lähtestatud!',
+    'sent'     => 'Oleme saatnud sulle e-postiga parooli lähtestamise lingi!',
+    'token'    => 'See parooli lähtestamise tunnus on vigane.',
+    'user'     => 'Ei suutnud leida sellise e-posti aadressiga kasutajat.',
 
 ];
