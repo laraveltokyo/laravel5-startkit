@@ -4,7 +4,7 @@ return [
     'path' => 'addons',
 
     'additional_paths' => [
-	    // name => path
+        // name => path
     ],
 
     'ignore_pattern' => '/^@/',

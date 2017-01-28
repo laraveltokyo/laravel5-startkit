@@ -142,16 +142,7 @@ return [
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
         Illuminate\Cache\CacheServiceProvider::class,
-        // [BEGIN] expand from Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class
-        // {{
-        Illuminate\Foundation\Providers\ArtisanServiceProvider::class,
-        Illuminate\Console\ScheduleServiceProvider::class,
-//        Illuminate\Database\MigrationServiceProvider::class,
-//        Illuminate\Database\SeedServiceProvider::class,
-        Illuminate\Foundation\Providers\ComposerServiceProvider::class,
-        Illuminate\Queue\ConsoleServiceProvider::class,
-        // }}
-        // [END] expand from Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class
+        // Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class,
         Illuminate\Cookie\CookieServiceProvider::class,
         Illuminate\Database\DatabaseServiceProvider::class,
         Illuminate\Encryption\EncryptionServiceProvider::class,
