@@ -47,6 +47,8 @@ return [
     'in_array'             => 'El camp :attribute no existeix a :other.',
     'integer'              => ':attribute ha de ser un nombre enter.',
     'ip'                   => ':attribute ha de ser una adreça IP vàlida.',
+    'ipv4'                 => 'The :attribute must be a valid IPv4 address.',
+    'ipv6'                 => 'The :attribute must be a valid IPv6 address.',
     'json'                 => 'El camp :attribute ha de contenir una cadena JSON vàlida.',
     'max'                  => [
         'numeric' => ':attribute no ha de ser major a :max.',
@@ -115,7 +117,35 @@ return [
     */
 
     'attributes'           => [
-        //
+        'name'                  => 'nom',
+        'username'              => 'usuari',
+        'email'                 => 'correu electrònic',
+        'first_name'            => 'nom',
+        'last_name'             => 'cognom',
+        'password'              => 'contrasenya',
+        'password_confirmation' => 'confirmació de la contrasenya',
+        'city'                  => 'ciutat',
+        'country'               => 'país',
+        'address'               => 'direcció',
+        'phone'                 => 'telèfon',
+        'mobile'                => 'mòbil',
+        'age'                   => 'edat',
+        'sex'                   => 'sexe',
+        'gender'                => 'gènere',
+        'year'                  => 'any',
+        'month'                 => 'mes',
+        'day'                   => 'dia',
+        'hour'                  => 'hora',
+        'minute'                => 'minut',
+        'second'                => 'segon',
+        'title'                 => 'títol',
+        'body'                  => 'contingut',
+        'description'           => 'descripció',
+        'excerpt'               => 'extracte',
+        'date'                  => 'data',
+        'time'                  => 'hora',
+        'subject'               => 'assumpte',
+        'message'               => 'missatge',
     ],
 
 ];
