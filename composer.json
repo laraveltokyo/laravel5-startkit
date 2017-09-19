@@ -15,6 +15,7 @@
         "barryvdh/laravel-debugbar": "^3.0"
     },
     "require-dev": {
+        "filp/whoops": "^2.0",
         "friendsofphp/php-cs-fixer": "^2.6",
         "fzaninotto/faker": "^1.7",
         "mockery/mockery": "^0.9",
